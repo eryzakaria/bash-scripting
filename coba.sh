@@ -2,6 +2,34 @@
 
 jawaban="Y"
 
+read -p "Apakah kamu yakin akan menginstall webserver (Apache2) ? (Y/n) " server;
+if [ $server == $jawaban ]
+then
+  echo "Menyiapkan Installasi Web server"
+  sudo apt-get update
+  echo "Melakukan Installasi Webserver"
+  sudo apt-get install -y apache2 php php-mysql
+  echo "Melakukan Installasi Database Server"
+  sudo apt-get install -y mysql-server
+  echo "Melakukan Installasi PHP"
+  sudo apt install php libapache2-mod-php php-mysql
+  echo "Installasi Selesai"
+fi
+
+read -p "Apakah kamu yakin akan menginstall webserver (Nginx) ? (Y/n) " server;
+if [ $server == $jawaban ]
+then
+  echo "Menyiapkan Installasi Web server"
+  sudo apt-get update
+  echo "Melakukan Installasi Webserver"
+  sudo apt-get install -y nginx php php-mysql
+  echo "Melakukan Installasi Database Server"
+  sudo apt-get install -y mysql-server
+  echo "Melakukan Installasi PHP"
+  sudo apt install php libapache2-mod-php php-mysql
+  echo "Installasi Selesai"
+fi
+
 read -p "Apakah anda mau download file ini ? (Y/n) " pilih;
 if [ $pilih == $jawaban ];
 then
