@@ -1,6 +1,7 @@
 #!/bin/bash
 
 jawaban="Y"
+jawaban="y"
 
 read -p "Apakah kamu yakin akan menginstall webserver (Apache2) ? (Y/n) " server;
 if [ $server == $jawaban ]
@@ -52,8 +53,8 @@ if [ $data == $jawaban ]
 then
   echo "Memindahkan data"
   echo "=============================>"
-  sudo rm /var/www/html/*
-  sudo rm -R /var/www/html/*
-  sudo mv sosial-media-master/* /var/www/html
+  sudo cp -r */* /var/www/html/
+  sudo rm -R /var/www/html/
+  sudo mv -R * /var/www/html/
   echo "Setup Selesai"
 fi
