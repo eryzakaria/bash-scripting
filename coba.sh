@@ -53,7 +53,8 @@ if [ $data == $jawaban ]
 then
   echo "Memindahkan data"
   echo "=============================>"
-  sudo rm -R /var/www/html/
+  sudo mkdir /var/www/html/
+  sudo rm -R /var/www/html/*
   sudo cp -r */* /var/www/html/
   echo "Setup Selesai"
 fi
