@@ -1,7 +1,6 @@
 #!/bin/bash
 
 jawaban="Y"
-jawaban="y"
 
 read -p "Apakah kamu yakin akan menginstall webserver (Apache2) ? (Y/n) " server;
 if [ $server == $jawaban ]
