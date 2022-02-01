@@ -22,7 +22,7 @@ then
   echo "Menyiapkan Installasi Web server"
   sudo apt-get update
   echo "Melakukan Installasi Webserver"
-  sudo apt-get install -y nginx php php-mysql
+  sudo apt-get install -y nginx
   echo "Melakukan Installasi Database Server"
   sudo apt-get install -y mysql-server
   echo "Melakukan Installasi PHP"
