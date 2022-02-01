@@ -20,7 +20,7 @@ read -p "Apakah anda mau menginstall webserver (Wordpress) ? (Y/n) " wordpress;
 if [ $jawaban == $wordpress ];
 then
   ls /var/www/html/
-  cd /var/www/html/
+  cd /var/www/html
   echo "Install Wordpress"
   sudo wget https://wordpress.org/latest.tar.gz
   echo "Ekstrak File"
