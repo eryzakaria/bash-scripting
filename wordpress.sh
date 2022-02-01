@@ -26,4 +26,5 @@ then
   echo "Ekstrak File"
   sudo tar -xzvf latest.tar.gz
   cd wordpress
+  cp wp-config-sample.php wp-config.php
 fi
