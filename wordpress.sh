@@ -41,4 +41,5 @@ then
   mv wordpress/* /var/www/html/
   cd wordpress
   sudo cp wp-config-sample.php wp-config.php
+  sudo chown -R www-data:www-data /var/www/html/
 fi
