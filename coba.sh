@@ -22,11 +22,11 @@ then
   echo "Menyiapkan Installasi Web server"
   sudo apt-get update
   echo "Melakukan Installasi Webserver"
-  sudo apt-get install -y nginx php php-mysql
+  sudo apt-get install nginx -y
   echo "Melakukan Installasi Database Server"
-  sudo apt-get install -y mysql-server
+  sudo apt-get install -y mysql-server mysql-client
   echo "Melakukan Installasi PHP"
-  sudo apt install php libapache2-mod-php php-mysql
+  sudo apt install php7.2 php7.2-gd php7.2-mysql php7.2-zip php7.2-fpm -y
   echo "Installasi Selesai"
 fi
 
