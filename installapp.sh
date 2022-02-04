@@ -7,10 +7,13 @@ echo "=============================>"
 echo "Downloading Data"
 echo "=============================>"
 cd
-wget https://github.com/bitdcs/Social-Media-in-PHP/archive/master.zip
+rm -f master.zip
+rm -R sosial-media-master
+wget https://github.com/zaki14-afk/sosial-media/archive/master.zip
 echo "=============================>"
 echo "Ekstrak File"
 echo "=============================>"
+sudo apt install unzip
 unzip master.zip
 echo "=============================>"
 echo "Memindahkan data"
